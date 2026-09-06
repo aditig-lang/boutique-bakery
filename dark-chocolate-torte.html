@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dark Chocolate Torte Recipe - Boutique Bakery</title>
+<meta name="description" content="An intensely rich, naturally flourless dark chocolate torte. Dense, fudgy perfection with a dusting of cocoa and a raspberry garnish."/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "secondary-container": "#fd5f7a","background": "#fff8f6","outline-variant": "#d5c3be","primary-container": "#4e2c22","secondary": "#b22546","surface-container-highest": "#f4ded7","surface-container-low": "#fff1ec","on-secondary": "#ffffff","on-primary": "#ffffff","inverse-on-surface": "#ffede7","surface": "#fff8f6","on-primary-container": "#c39285","primary": "#35170f","surface-dim": "#ecd5ce","on-surface-variant": "#514440","surface-variant": "#f4ded7","outline": "#837470","tertiary": "#20201b","surface-container-high": "#fae3dc","surface-container": "#ffe9e2","surface-bright": "#fff8f6","on-background": "#241915","surface-container-lowest": "#ffffff","on-secondary-container": "#63001e"
+        },
+        borderRadius: {"DEFAULT": "0.25rem","lg": "0.5rem","xl": "0.75rem","full": "9999px"},
+        spacing: {"stack-gap": "16px","card-gutter": "12px","section-margin": "32px","base-unit": "4px","container-padding": "20px"},
+        fontFamily: {"label-sm": ["Plus Jakarta Sans"],"body-lg": ["Plus Jakarta Sans"],"title-lg": ["Plus Jakarta Sans"],"headline-md": ["Playfair Display"],"display-lg": ["Playfair Display"],"body-md": ["Plus Jakarta Sans"],"display-lg-mobile": ["Playfair Display"]},
+        fontSize: {"label-sm": ["12px", {lineHeight:"16px",letterSpacing:"0.05em",fontWeight:"600"}],"body-lg": ["16px", {lineHeight:"26px",fontWeight:"400"}],"title-lg": ["20px", {lineHeight:"28px",fontWeight:"600"}],"headline-md": ["24px", {lineHeight:"32px",fontWeight:"600"}],"display-lg": ["40px", {lineHeight:"48px",letterSpacing:"-0.02em",fontWeight:"700"}],"body-md": ["14px", {lineHeight:"22px",fontWeight:"400"}],"display-lg-mobile": ["32px", {lineHeight:"40px",fontWeight:"700"}]}
+      }
+    }
+  }
+</script>
+<link rel="stylesheet" href="/style.css"/>
+</head>
+<body class="bg-background text-on-background min-h-screen pb-24 md:pb-0">
+
+<header class="w-full top-0 sticky z-50 bg-background/95 backdrop-blur-sm border-b border-outline-variant flex justify-between items-center px-container-padding py-4">
+  <a href="/" class="text-on-surface-variant hover:opacity-80 transition-opacity">
+    <span class="material-symbols-outlined">arrow_back</span>
+  </a>
+  <h1 class="font-headline-md text-headline-md text-primary" style="font-family:'Playfair Display',serif;font-size:20px;">Boutique Bakery</h1>
+  <button class="text-on-surface-variant hover:opacity-80 transition-opacity"><span class="material-symbols-outlined">share</span></button>
+</header>
+
+<main class="max-w-3xl mx-auto">
+  <section class="relative w-full h-72 md:h-96 overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center"
+         style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCEoTGB2OkhbaUFkOYh8N6n1On_uD3acuRNe3wD_rJbkUJnVSqybXXlfCGypa7vS2_cJ_xWnGlXr6tgl2KrKUhj0A3Iz8R7e-h6-h0JV_92pbMGTnq9QAphE9ZlwRslpSaxcQ14Nh-1ZXDMLfelVk_L3MzAsYnKInkJu04WkWuar1nhtMXyeD4ubp6zLhigVHY-zqPABcmyQcT4AUKhfEFdjxtZmYRxu9opQ44DmLKjahirlCZUHik')"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
+    <button class="absolute top-4 right-4 w-10 h-10 rounded-full bg-surface-container-highest/80 backdrop-blur-sm flex items-center justify-center text-on-surface-variant hover:text-secondary transition-colors" id="fav-btn">
+      <span class="material-symbols-outlined">favorite</span>
+    </button>
+  </section>
+
+  <section class="px-container-padding pt-6 pb-4">
+    <div class="flex flex-wrap gap-2 mb-3">
+      <span class="font-label-sm text-label-sm bg-surface-container text-primary px-3 py-1 rounded-full border border-outline-variant">Gluten-free</span>
+      <span class="font-label-sm text-label-sm bg-surface-container text-primary px-3 py-1 rounded-full border border-outline-variant">Vegetarian</span>
+      <span class="font-label-sm text-label-sm bg-surface-container text-primary px-3 py-1 rounded-full border border-outline-variant">Flourless</span>
+    </div>
+    <h2 class="text-primary mb-2" style="font-family:'Playfair Display',serif;font-size:32px;font-weight:700;line-height:1.2;">Dark Chocolate Torte</h2>
+    <p class="font-body-lg text-on-surface-variant mb-4">A decadent dark chocolate torte, dense and fudgy, dusted with a fine layer of cocoa powder. Intensely rich and naturally flourless—pure chocolate indulgence.</p>
+    <div class="flex gap-6 flex-wrap">
+      <div class="flex flex-col items-center">
+        <span class="material-symbols-outlined text-secondary text-2xl">schedule</span>
+        <span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Prep</span>
+        <span class="font-title-lg text-title-lg text-primary">15m</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <span class="material-symbols-outlined text-secondary text-2xl">local_fire_department</span>
+        <span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Bake</span>
+        <span class="font-title-lg text-title-lg text-primary">35m</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <span class="material-symbols-outlined text-secondary text-2xl">people</span>
+        <span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Serves</span>
+        <span class="font-title-lg text-title-lg text-primary">10</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <span class="material-symbols-outlined text-secondary text-2xl">signal_cellular_alt</span>
+        <span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Level</span>
+        <span class="font-title-lg text-title-lg text-primary">Medium</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="px-container-padding md:grid md:grid-cols-3 md:gap-8">
+    <section class="md:col-span-1 mb-8">
+      <h3 class="font-title-lg text-title-lg text-primary mb-4" style="font-size:20px;font-weight:600;">Ingredients</h3>
+      <ul class="flex flex-col gap-3" id="ingredients-list">
+        <li class="ingredient-item flex items-center gap-3 border-b border-surface-variant pb-3 cursor-pointer">
+          <span class="w-5 h-5 rounded border-2 border-outline flex-shrink-0 flex items-center justify-center bg-white">
+            <span class="material-symbols-outlined check-icon text-secondary opacity-0 transition-opacity" style="font-size:14px;">check</span>
+          </span>
+          <div><span class="ingredient-name text-primary font-body-md block">Dark chocolate (70%+)</span><span class="text-outline text-label-sm">200g, chopped</span></div>
+        </li>
+        <li class="ingredient-item flex items-center gap-3 border-b border-surface-variant pb-3 cursor-pointer">
+          <span class="w-5 h-5 rounded border-2 border-outline flex-shrink-0 flex items-center justify-center bg-white">
+            <span class="material-symbols-outlined check-icon text-secondary opacity-0 transition-opacity" style="font-size:14px;">check</span>
+          </span>
+          <div><span class="ingredient-name text-primary font-body-md block">Unsalted butter</span><span class="text-outline text-label-sm">150g</span></div>
+        </li>
+        <li class="ingredient-item flex items-center gap-3 border-b border-surface-variant pb-3 cursor-pointer">
+          <span class="w-5 h-5 rounded border-2 border-outline flex-shrink-0 flex items-center justify-center bg-white">
+            <span class="material-symbols-outlined check-icon text-secondary opacity-0 transition-opacity" style="font-size:14px;">check</span>
+          </span>
+          <div><span class="ingredient-name text-primary font-body-md block">Caster sugar</span><span class="text-outline text-label-sm">200g</span></div>
+        </li>
+        <li class="ingredient-item flex items-center gap-3 border-b border-surface-variant pb-3 cursor-pointer">
+          <span class="w-5 h-5 rounded border-2 border-outline flex-shrink-0 flex items-center justify-center bg-white">
+            <span class="material-symbols-outlined check-icon text-secondary opacity-0 transition-opacity" style="font-size:14px;">check</span>
+          </span>
+          <div><span class="ingredient-name text-primary font-body-md block">Large eggs</span><span class="text-outline text-label-sm">4</span></div>
+        </li>
+        <li class="ingredient-item flex items-center gap-3 border-b border-surface-variant pb-3 cursor-pointer">
+          <span class="w-5 h-5 rounded border-2 border-outline flex-shrink-0 flex items-center justify-center bg-white">
+            <span class="material-symbols-outlined check-icon text-secondary opacity-0 transition-opacity" style="font-size:14px;">check</span>
+          </span>
+          <div><span class="ingredient-name text-primary font-body-md block">Cocoa powder</span><span class="text-outline text-label-sm">3 tbsp, plus extra for dusting</span></div>
+        </li>
+        <li class="ingredient-item flex items-center gap-3 border-b border-surface-variant pb-3 cursor-pointer">
+          <span class="w-5 h-5 rounded border-2 border-outline flex-shrink-0 flex items-center justify-center bg-white">
+            <span class="material-symbols-outlined check-icon text-secondary opacity-0 transition-opacity" style="font-size:14px;">check</span>
+          </span>
+          <div><span class="ingredient-name text-primary font-body-md block">Vanilla extract</span><span class="text-outline text-label-sm">1 tsp</span></div>
+        </li>
+        <li class="ingredient-item flex items-center gap-3 cursor-pointer">
+          <span class="w-5 h-5 rounded border-2 border-outline flex-shrink-0 flex items-center justify-center bg-white">
+            <span class="material-symbols-outlined check-icon text-secondary opacity-0 transition-opacity" style="font-size:14px;">check</span>
+          </span>
+          <div><span class="ingredient-name text-primary font-body-md block">Fresh raspberries</span><span class="text-outline text-label-sm">To garnish</span></div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="md:col-span-2 flex flex-col gap-stack-gap mb-8">
+      <h3 class="font-title-lg text-title-lg text-primary mb-2 hidden md:block" style="font-size:20px;font-weight:600;">Method</h3>
+      <div class="relative bg-surface-container-lowest p-6 rounded-xl shadow-[0_4px_20px_rgba(78,44,34,0.08)] overflow-hidden">
+        <div class="absolute -right-4 -top-8 font-bold pointer-events-none leading-none" style="font-family:'Playfair Display',serif;font-size:120px;color:rgba(53,23,15,0.07);">1</div>
+        <h4 class="text-primary mb-2 relative z-10" style="font-size:18px;font-weight:600;">Melt</h4>
+        <p class="text-on-surface-variant font-body-md relative z-10">Preheat oven to 180°C (350°F). Melt the dark chocolate and butter together in a heatproof bowl over simmering water, stirring until smooth. Remove from heat and let cool slightly.</p>
+      </div>
+      <div class="relative bg-surface-container-lowest p-6 rounded-xl shadow-[0_4px_20px_rgba(78,44,34,0.08)] overflow-hidden">
+        <div class="absolute -right-4 -top-8 font-bold pointer-events-none leading-none" style="font-family:'Playfair Display',serif;font-size:120px;color:rgba(53,23,15,0.07);">2</div>
+        <h4 class="text-primary mb-2 relative z-10" style="font-size:18px;font-weight:600;">Whisk</h4>
+        <p class="text-on-surface-variant font-body-md relative z-10">In a large bowl, whisk together the sugar and eggs until pale and slightly thickened, about 3 minutes. Add the vanilla extract and whisk to combine.</p>
+      </div>
+      <div class="relative bg-surface-container-lowest p-6 rounded-xl shadow-[0_4px_20px_rgba(78,44,34,0.08)] overflow-hidden">
+        <div class="absolute -right-4 -top-8 font-bold pointer-events-none leading-none" style="font-family:'Playfair Display',serif;font-size:120px;color:rgba(53,23,15,0.07);">3</div>
+        <h4 class="text-primary mb-2 relative z-10" style="font-size:18px;font-weight:600;">Fold</h4>
+        <p class="text-on-surface-variant font-body-md relative z-10">Gently fold the cooled chocolate mixture into the egg mixture. Sift in the cocoa powder and fold again until just combined—do not overmix to keep the torte dense and fudgy.</p>
+      </div>
+      <div class="relative bg-surface-container-lowest p-6 rounded-xl shadow-[0_4px_20px_rgba(78,44,34,0.08)] overflow-hidden">
+        <div class="absolute -right-4 -top-8 font-bold pointer-events-none leading-none" style="font-family:'Playfair Display',serif;font-size:120px;color:rgba(53,23,15,0.07);">4</div>
+        <h4 class="text-primary mb-2 relative z-10" style="font-size:18px;font-weight:600;">Bake &amp; Serve</h4>
+        <p class="text-on-surface-variant font-body-md relative z-10">Pour into a greased 23cm springform pan. Bake for 30–35 minutes until the edges are set but the centre has a slight wobble. Cool completely, dust generously with cocoa powder, and garnish with fresh raspberries.</p>
+      </div>
+      <div class="mt-4 mb-12">
+        <button class="w-full h-12 bg-primary text-on-primary rounded-full shadow-sm hover:opacity-90 active:scale-95 transition-all duration-200 flex items-center justify-center gap-2" style="font-size:18px;font-weight:600;">
+          Start Baking <span class="material-symbols-outlined">play_arrow</span>
+        </button>
+      </div>
+    </section>
+  </div>
+</main>
+
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 bg-surface-container-low shadow-[0_-4px_20px_rgba(78,44,34,0.08)] rounded-t-xl flex justify-around items-center px-4 py-2 pb-6">
+  <a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-secondary transition-all duration-200 active:scale-95 px-4 py-1" href="/">
+    <span class="material-symbols-outlined">home</span><span class="font-label-sm text-label-sm mt-1">Home</span>
+  </a>
+  <a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-secondary transition-all duration-200 active:scale-95 px-4 py-1" href="#">
+    <span class="material-symbols-outlined">search</span><span class="font-label-sm text-label-sm mt-1">Search</span>
+  </a>
+  <a class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-full px-4 py-1" href="#">
+    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">favorite</span><span class="font-label-sm text-label-sm mt-1">Saved</span>
+  </a>
+  <a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-secondary transition-all duration-200 active:scale-95 px-4 py-1" href="#">
+    <span class="material-symbols-outlined">person</span><span class="font-label-sm text-label-sm mt-1">Profile</span>
+  </a>
+</nav>
+<script>
+  document.querySelectorAll('.ingredient-item').forEach(item => {
+    item.addEventListener('click', () => {
+      item.classList.toggle('checked');
+      item.querySelector('.check-icon').style.opacity = item.classList.contains('checked') ? '1' : '0';
+    });
+  });
+  const favBtn = document.getElementById('fav-btn');
+  favBtn.addEventListener('click', () => {
+    const isFaved = favBtn.dataset.faved === 'true';
+    favBtn.dataset.faved = !isFaved;
+    favBtn.querySelector('.material-symbols-outlined').style.fontVariationSettings = isFaved ? '' : "'FILL' 1";
+    favBtn.style.color = isFaved ? '' : '#b22546';
+  });
+</script>
+</body>
+</html>

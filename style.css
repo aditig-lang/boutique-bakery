@@ -1,0 +1,35 @@
+/* Boutique Bakery - Veggie Cake Recipes Stylesheet */
+
+/* Font & Layout Basics */
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  min-height: max(884px, 100dvh);
+}
+
+/* Custom Scrollbar Utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Recipe Cards */
+.recipe-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.recipe-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(78, 44, 34, 0.14);
+}
+
+/* Interactive Ingredient List */
+.ingredient-item.checked .check-icon {
+  opacity: 1 !important;
+}
+.ingredient-item.checked .ingredient-name {
+  text-decoration: line-through;
+  color: #b22546;
+  opacity: 0.7;
+}

@@ -1,0 +1,16 @@
+{
+  "name": "veggie-cake-recipes",
+  "version": "1.0.0",
+  "description": "Veggie Cake Recipes - A boutique bakery web app from Stitch",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "bakery",
+    "recipes",
+    "cakes"
+  ],
+  "license": "MIT"
+}

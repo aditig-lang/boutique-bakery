@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Boutique Bakery - Veggie Cake Recipes</title>
+<meta name="description" content="Discover exquisite vegetarian cake recipes from Boutique Bakery. Artisanal, handcrafted recipes for the discerning home baker."/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "secondary-container": "#fd5f7a",
+          "background": "#fff8f6",
+          "on-tertiary-fixed": "#1c1c17",
+          "outline-variant": "#d5c3be",
+          "primary-container": "#4e2c22",
+          "on-tertiary": "#ffffff",
+          "primary-fixed": "#ffdbd1",
+          "secondary": "#b22546",
+          "inverse-surface": "#3b2d29",
+          "surface-container-highest": "#f4ded7",
+          "surface-container-low": "#fff1ec",
+          "on-secondary": "#ffffff",
+          "on-primary": "#ffffff",
+          "primary-fixed-dim": "#efbaac",
+          "tertiary-fixed-dim": "#c9c6be",
+          "on-secondary-fixed": "#400010",
+          "inverse-on-surface": "#ffede7",
+          "secondary-fixed-dim": "#ffb2ba",
+          "tertiary-container": "#36352f",
+          "surface": "#fff8f6",
+          "surface-tint": "#7d5449",
+          "on-primary-container": "#c39285",
+          "on-primary-fixed": "#30130b",
+          "primary": "#35170f",
+          "on-primary-fixed-variant": "#633d33",
+          "inverse-primary": "#efbaac",
+          "surface-dim": "#ecd5ce",
+          "on-surface-variant": "#514440",
+          "surface-variant": "#f4ded7",
+          "outline": "#837470",
+          "on-error-container": "#93000a",
+          "secondary-fixed": "#ffd9dc",
+          "error": "#ba1a1a",
+          "on-tertiary-fixed-variant": "#484741",
+          "tertiary-fixed": "#e6e2d9",
+          "on-surface": "#241915",
+          "error-container": "#ffdad6",
+          "on-error": "#ffffff",
+          "on-tertiary-container": "#a09d96",
+          "on-secondary-container": "#63001e",
+          "tertiary": "#20201b",
+          "surface-container-high": "#fae3dc",
+          "surface-container": "#ffe9e2",
+          "surface-bright": "#fff8f6",
+          "on-background": "#241915",
+          "surface-container-lowest": "#ffffff",
+          "on-secondary-fixed-variant": "#900330"
+        },
+        borderRadius: {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        spacing: {
+          "stack-gap": "16px",
+          "card-gutter": "12px",
+          "section-margin": "32px",
+          "base-unit": "4px",
+          "container-padding": "20px"
+        },
+        fontFamily: {
+          "label-sm": ["Plus Jakarta Sans"],
+          "body-lg": ["Plus Jakarta Sans"],
+          "title-lg": ["Plus Jakarta Sans"],
+          "headline-md": ["Playfair Display"],
+          "display-lg": ["Playfair Display"],
+          "body-md": ["Plus Jakarta Sans"],
+          "display-lg-mobile": ["Playfair Display"]
+        },
+        fontSize: {
+          "label-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.05em", fontWeight: "600" }],
+          "body-lg": ["16px", { lineHeight: "26px", fontWeight: "400" }],
+          "title-lg": ["20px", { lineHeight: "28px", fontWeight: "600" }],
+          "headline-md": ["24px", { lineHeight: "32px", fontWeight: "600" }],
+          "display-lg": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "700" }],
+          "body-md": ["14px", { lineHeight: "22px", fontWeight: "400" }],
+          "display-lg-mobile": ["32px", { lineHeight: "40px", fontWeight: "700" }]
+        }
+      },
+    },
+  }
+</script>
+<link rel="stylesheet" href="/style.css"/>
+</head>
+<body class="bg-background text-on-background min-h-screen pb-24 md:pb-0">
+
+<!-- TopAppBar -->
+<header class="w-full top-0 sticky z-50 bg-background/95 backdrop-blur-sm border-b border-outline-variant flex justify-between items-center px-container-padding py-4">
+  <button id="menu-btn" class="text-on-surface-variant hover:opacity-80 transition-transform duration-200 active:scale-95">
+    <span class="material-symbols-outlined">menu</span>
+  </button>
+  <a href="/" class="font-headline-md text-headline-md text-primary" style="font-family:'Playfair Display',serif;">Boutique Bakery</a>
+  <button class="text-on-surface-variant hover:opacity-80 transition-transform duration-200 active:scale-95">
+    <span class="material-symbols-outlined">shopping_bag</span>
+  </button>
+</header>
+
+<main class="max-w-7xl mx-auto md:px-container-padding">
+
+  <!-- Hero Section -->
+  <section class="mt-stack-gap px-container-padding md:px-0">
+    <div class="relative w-full h-[530px] md:h-[618px] rounded-xl overflow-hidden shadow-sm group">
+      <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+           style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDC36EBdj9I3lRHkMKE9hNYr7JU8dT9_iF69KtLQt_N6azIKP4mMXT1OrXa93gWa8zLs6cc0x6d1ahhX16OUYis6NZzgdUCjVzE4qvY8cfXwjZ_yotWql51nO0iLPltFfLirsBi9PZFs3TXr8b0quWuZVZwAA60OuTKL5fGxnMsbLX7J1wqL4N7Bf6lVfNjXV3UGauOpLDWHPmFMgGaiBKuHu-DLiT-nxGz-m38KH_KuUtQM5BPBBs')">
+      </div>
+      <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent"></div>
+      <div class="absolute bottom-0 left-0 w-full p-6 md:p-8 flex flex-col justify-end">
+        <span class="font-label-sm text-label-sm text-on-primary bg-primary-container/80 backdrop-blur-md px-3 py-1 rounded-full w-max mb-3 border border-primary/20">Featured Recipe</span>
+        <h1 class="font-display-lg-mobile md:font-display-lg text-on-primary mb-2" style="font-family:'Playfair Display',serif;font-size:clamp(28px,5vw,40px);font-weight:700;line-height:1.2;">Lemon Raspberry Cake</h1>
+        <p class="font-body-md text-on-primary/90 max-w-lg mb-4">A perfect harmony of zesty citrus and sweet berries, layered in a light, airy sponge.</p>
+        <a href="/recipes/lemon-raspberry-cake" class="bg-secondary text-on-secondary font-label-sm text-label-sm px-6 py-3 rounded-full w-max hover:bg-secondary/90 transition-all duration-200 active:scale-95 shadow-[0_4px_20px_rgba(78,44,34,0.08)] flex items-center gap-2 no-underline">
+          <span>View Recipe</span>
+          <span class="material-symbols-outlined text-sm">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section class="mt-section-margin px-container-padding md:px-0">
+    <div class="flex justify-between items-end mb-stack-gap">
+      <h2 class="font-title-lg text-title-lg text-primary" style="font-family:'Plus Jakarta Sans',sans-serif;font-size:20px;font-weight:600;">Cake Categories</h2>
+      <a class="font-label-sm text-label-sm text-secondary hover:text-secondary/80" href="#">View all</a>
+    </div>
+    <div class="flex gap-card-gutter overflow-x-auto no-scrollbar pb-4 snap-x">
+      <!-- Category 1 -->
+      <button class="snap-start shrink-0 w-32 h-40 rounded-lg relative overflow-hidden group shadow-[0_4px_20px_rgba(78,44,34,0.08)]">
+        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+             style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDwzk5GgXghRmfe5-hkkMIgxMivAgcnHAmWO1CWE2OqvwXHUy1PabnKF7GS1_Eyqc6X03ASkbL5rkwtiHc8i1Sgm36S0M4FsjyrTcvx9TMPEuj8Ba-dEzFQ_VhbX0gBMraFe3rhRuyisJCYT-Ja6DRtIzgrL3lI0qChWqN1-KshnJTZJr3aesyahJhg-32MVk-QtI8keGwc-X69fjoyenUJb2yb3U4m2y8cBBm4w1DEC-V5250hD14')"></div>
+        <div class="absolute inset-0 bg-primary/40 group-hover:bg-primary/50 transition-colors"></div>
+        <span class="absolute inset-0 flex items-center justify-center font-title-lg text-title-lg text-on-primary text-center p-2 z-10 drop-shadow-md">Chocolate</span>
+      </button>
+      <!-- Category 2 -->
+      <button class="snap-start shrink-0 w-32 h-40 rounded-lg relative overflow-hidden group shadow-[0_4px_20px_rgba(78,44,34,0.08)]">
+        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+             style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAyENSS-0jVXRdXfSqN0LM-TK67-K8_mRn8DKkIo92b779lP6RwH5zyqFXAcfHtgrUZRg6CgL1VVf_RVg-9zsoMHLLLBa7LQ9a3y6GxRKxy2JBjuQwQieVfBcN6ACcZ_l_QJrJ5iZ4V64_9eASnguOTUJ54CilB7YDvYSmN6wPuARUMH_7yR42YZtMhqreaOL8BRdlkLd6xfD97y10rtXwJ489z9I92z5rORYEiG8TD7FA-hNQDxH4')"></div>
+        <div class="absolute inset-0 bg-primary/40 group-hover:bg-primary/50 transition-colors"></div>
+        <span class="absolute inset-0 flex items-center justify-center font-title-lg text-title-lg text-on-primary text-center p-2 z-10 drop-shadow-md">Fruit</span>
+      </button>
+      <!-- Category 3 -->
+      <button class="snap-start shrink-0 w-32 h-40 rounded-lg relative overflow-hidden group shadow-[0_4px_20px_rgba(78,44,34,0.08)]">
+        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+             style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAGUYS0yJSkfwSwOZzyikLdvQhyPZx89sU8RHgs96ZtSsKJvJv0zvMKYdvuoZmzoE5OTxoVCbO2xU3f-5as6Bx48nww8R7ryuDaw-icJRO77GnLEFen3iKEHTxTV30ImahX9zTH2lX2Y1ZAW6xiyWZmIIlwGsZUt66siMXbmu0x5JjWuPtNlZ3yOvynYKhNwjZMmgEfrNd0nBcGV9O4ypBb0ldqtizSuQw19x0DtpkQQgNBsDsFtssA')"></div>
+        <div class="absolute inset-0 bg-primary/40 group-hover:bg-primary/50 transition-colors"></div>
+        <span class="absolute inset-0 flex items-center justify-center font-title-lg text-title-lg text-on-primary text-center p-2 z-10 drop-shadow-md">Vegan</span>
+      </button>
+      <!-- Category 4 -->
+      <button class="snap-start shrink-0 w-32 h-40 rounded-lg relative overflow-hidden group shadow-[0_4px_20px_rgba(78,44,34,0.08)]">
+        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+             style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB1CxMo0nD1ZTCX84zRBYa-ZrBzY3XiIy7Euwo8h6PslWSVx6dg51SLVx9O1YWpW61xBVtFoLFPTNJZPxKVsBhm5NyRUHyj-BWXxtZYsmt-XQ91WwAqUrlX41c_2SCX7yK-vr4m_gKyGEdwSziO5HbNOxpLZ6ue3JtjQTJz1JfxBljwLiFzYCT06ioCX4jmn_bP_x0BwGw5lupf3u_4tdN3NQM1AL1w3noanZLEXOG4RJMcSYxA7Mo')"></div>
+        <div class="absolute inset-0 bg-primary/40 group-hover:bg-primary/50 transition-colors"></div>
+        <span class="absolute inset-0 flex items-center justify-center font-title-lg text-title-lg text-on-primary text-center p-2 z-10 drop-shadow-md">Floral</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Recent Recipes Grid -->
+  <section class="mt-section-margin px-container-padding md:px-0 mb-section-margin">
+    <h2 class="font-title-lg text-title-lg text-primary mb-stack-gap" style="font-size:20px;font-weight:600;">Recent Recipes</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-card-gutter">
+
+      <!-- Recipe Card 1: Matcha Sponge -->
+      <a href="/recipes/matcha-sponge-cake" class="recipe-card bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(78,44,34,0.08)] group cursor-pointer flex flex-col h-full no-underline">
+        <div class="relative h-48 w-full overflow-hidden">
+          <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+               style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBo4evft-ergc9g6OpQCm1PmCrhUdsALi2JjRwlllHQARcjMBYDnE7n7Z-_JK5HiZMxV5YMgyb9AMS7NUtZyUHk0gZp4olGDPLMLBPGSEgYO1XSUOzKnhKCo3fJvGaaAh1B238BMqIquZWwcEEBW3q4He35eDOdUhZZuREzw6DDFZjsuYguifktyM9O7icCBimW4Stt5NVuwwCf2LTlE_KgGzSpUsDT1Rj4I_DW8Ffyrvw2mNJHlFM')">
+          </div>
+          <button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-highest/80 backdrop-blur-sm flex items-center justify-center text-on-surface-variant hover:text-secondary transition-colors" onclick="event.preventDefault();toggleFav(this)">
+            <span class="material-symbols-outlined text-lg">favorite</span>
+          </button>
+        </div>
+        <div class="p-4 flex flex-col flex-grow">
+          <h3 class="font-headline-md text-headline-md text-primary mb-1" style="font-family:'Playfair Display',serif;">Matcha Sponge Cake</h3>
+          <p class="font-body-md text-on-surface-variant mb-3 flex-grow">Light, earthy, and perfectly sweet.</p>
+          <div class="flex items-center justify-between mt-auto">
+            <div class="flex items-center gap-1 text-on-surface-variant">
+              <span class="material-symbols-outlined text-sm">schedule</span>
+              <span class="font-label-sm text-label-sm">45m</span>
+            </div>
+            <span class="font-label-sm text-label-sm bg-surface-container px-2 py-1 rounded-md text-primary">Easy</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Recipe Card 2: Classic Carrot -->
+      <a href="/recipes/classic-carrot-cake" class="recipe-card bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(78,44,34,0.08)] group cursor-pointer flex flex-col h-full no-underline">
+        <div class="relative h-48 w-full overflow-hidden">
+          <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+               style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDvMVGBRbnYeKpdANgS1ZiB2ZesIwPvWPC-n6ZRkdJCqeJzd5w86otF3UZj1_hqU1wq_1YVrEVg9vV182rU1vNl9QvRevu_PF2d7V4rNsfm_qgBn3a8jZWs9G7Kx5hWh8QZaHg6-cP_Q8c1hbGxuQ6eyC8BIpBOxrfH0jADO30bApayg51Tyd2ysmUMzaJ3XAELNn769OuIyYSwpEyiclzp7bSSBU_RLtJhUtD0RDA2amFuHYywAR4')">
+          </div>
+          <button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-highest/80 backdrop-blur-sm flex items-center justify-center text-on-surface-variant hover:text-secondary transition-colors" onclick="event.preventDefault();toggleFav(this)">
+            <span class="material-symbols-outlined text-lg">favorite</span>
+          </button>
+        </div>
+        <div class="p-4 flex flex-col flex-grow">
+          <h3 class="font-headline-md text-headline-md text-primary mb-1" style="font-family:'Playfair Display',serif;">Classic Carrot Cake</h3>
+          <p class="font-body-md text-on-surface-variant mb-3 flex-grow">Richly spiced with a velvety frosting.</p>
+          <div class="flex items-center justify-between mt-auto">
+            <div class="flex items-center gap-1 text-on-surface-variant">
+              <span class="material-symbols-outlined text-sm">schedule</span>
+              <span class="font-label-sm text-label-sm">1h 15m</span>
+            </div>
+            <span class="font-label-sm text-label-sm bg-surface-container px-2 py-1 rounded-md text-primary">Medium</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Recipe Card 3: Dark Chocolate Torte -->
+      <a href="/recipes/dark-chocolate-torte" class="recipe-card bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(78,44,34,0.08)] group cursor-pointer flex flex-col h-full no-underline">
+        <div class="relative h-48 w-full overflow-hidden">
+          <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+               style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCEoTGB2OkhbaUFkOYh8N6n1On_uD3acuRNe3wD_rJbkUJnVSqybXXlfCGypa7vS2_cJ_xWnGlXr6tgl2KrKUhj0A3Iz8R7e-h6-h0JV_92pbMGTnq9QAphE9ZlwRslpSaxcQ14Nh-1ZXDMLfelVk_L3MzAsYnKInkJu04WkWuar1nhtMXyeD4ubp6zLhigVHY-zqPABcmyQcT4AUKhfEFdjxtZmYRxu9opQ44DmLKjahirlCZUHik')">
+          </div>
+          <button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-highest/80 backdrop-blur-sm flex items-center justify-center text-on-surface-variant hover:text-secondary transition-colors" onclick="event.preventDefault();toggleFav(this)">
+            <span class="material-symbols-outlined text-lg">favorite</span>
+          </button>
+        </div>
+        <div class="p-4 flex flex-col flex-grow">
+          <h3 class="font-headline-md text-headline-md text-primary mb-1" style="font-family:'Playfair Display',serif;">Dark Chocolate Torte</h3>
+          <p class="font-body-md text-on-surface-variant mb-3 flex-grow">Intensely rich and naturally flourless.</p>
+          <div class="flex items-center justify-between mt-auto">
+            <div class="flex items-center gap-1 text-on-surface-variant">
+              <span class="material-symbols-outlined text-sm">schedule</span>
+              <span class="font-label-sm text-label-sm">50m</span>
+            </div>
+            <span class="font-label-sm text-label-sm bg-surface-container px-2 py-1 rounded-md text-primary">Medium</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Recipe Card 4: Lavender Honey -->
+      <a href="/recipes/lavender-honey-cake" class="recipe-card bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(78,44,34,0.08)] group cursor-pointer flex flex-col h-full no-underline">
+        <div class="relative h-48 w-full overflow-hidden">
+          <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+               style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCt03vMAdhSfe8IMXtXKPgy_q9CBXFQXW7w6lSB04L2EYa4FwxFvBL2J_g-DceZ_EhN8ZrgeJmKpB_xkI9VbKZ-Fep2fCa59dYk0KBRxu4s6qafZx6n9RvtStDsp_rXaJ7sNrUzjIiK1a_baqbjY0h6JZ084pjd0GfALYg60on9Rr3ZlV2HbFuMzfOoXy4xs1w5uJ4aKKBdhiB50gEKcfSm7HyB6PE8nmT0diUF_j5XtY1aiW_nbl8')">
+          </div>
+          <button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-highest/80 backdrop-blur-sm flex items-center justify-center text-on-surface-variant hover:text-secondary transition-colors" onclick="event.preventDefault();toggleFav(this)">
+            <span class="material-symbols-outlined text-lg">favorite</span>
+          </button>
+        </div>
+        <div class="p-4 flex flex-col flex-grow">
+          <h3 class="font-headline-md text-headline-md text-primary mb-1" style="font-family:'Playfair Display',serif;">Lavender Honey Cake</h3>
+          <p class="font-body-md text-on-surface-variant mb-3 flex-grow">Floral notes with a sweet honey glaze.</p>
+          <div class="flex items-center justify-between mt-auto">
+            <div class="flex items-center gap-1 text-on-surface-variant">
+              <span class="material-symbols-outlined text-sm">schedule</span>
+              <span class="font-label-sm text-label-sm">1h</span>
+            </div>
+            <span class="font-label-sm text-label-sm bg-surface-container px-2 py-1 rounded-md text-primary">Advanced</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+
+    <!-- View All Button -->
+    <div class="mt-8 flex justify-center">
+      <a href="#" class="bg-primary text-on-primary font-label-sm text-label-sm px-8 py-3 rounded-full hover:bg-primary/90 transition-all duration-200 active:scale-95 shadow-[0_4px_20px_rgba(78,44,34,0.08)] no-underline">
+        View All Recipes
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-2 pb-6 bg-surface-container-low shadow-[0_-4px_20px_rgba(78,44,34,0.08)] rounded-t-xl">
+  <a class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-full px-4 py-1 transition-all duration-200 active:scale-95" href="/">
+    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+    <span class="font-label-sm text-label-sm mt-1">Home</span>
+  </a>
+  <a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-secondary transition-all duration-200 active:scale-95 px-4 py-1" href="#">
+    <span class="material-symbols-outlined">search</span>
+    <span class="font-label-sm text-label-sm mt-1">Search</span>
+  </a>
+  <a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-secondary transition-all duration-200 active:scale-95 px-4 py-1" href="#">
+    <span class="material-symbols-outlined">favorite</span>
+    <span class="font-label-sm text-label-sm mt-1">Saved</span>
+  </a>
+  <a class="flex flex-col items-center justify-center text-on-surface-variant hover:text-secondary transition-all duration-200 active:scale-95 px-4 py-1" href="#">
+    <span class="material-symbols-outlined">person</span>
+    <span class="font-label-sm text-label-sm mt-1">Profile</span>
+  </a>
+</nav>
+
+<script>
+function toggleFav(btn) {
+  const icon = btn.querySelector('.material-symbols-outlined');
+  if (btn.dataset.faved === 'true') {
+    btn.dataset.faved = 'false';
+    btn.style.color = '';
+    icon.style.fontVariationSettings = '';
+  } else {
+    btn.dataset.faved = 'true';
+    btn.style.color = '#b22546';
+    icon.style.fontVariationSettings = "'FILL' 1";
+  }
+}
+</script>
+</body>
+</html>
